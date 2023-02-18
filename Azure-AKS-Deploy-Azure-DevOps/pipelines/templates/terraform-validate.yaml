@@ -11,13 +11,13 @@
           displayName: 'init'
           inputs:
             provider: 'azurerm'
-            command: 'init'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/'
+            command: 'init'            
             backendServiceArm: '${{ parameters.backendServiceArm }}'
             backendAzureRmResourceGroupName: '${{ parameters.backendAzureRmResourceGroupName }}'
             backendAzureRmStorageAccountName: '${{ parameters.backendAzureRmStorageAccountName }}'
             backendAzureRmContainerName: '${{ parameters.backendAzureRmContainerName }}'
-            backendAzureRmKey: '${{ parameters.backendAzureRmKey }}'             
+            backendAzureRmKey: '${{ parameters.backendAzureRmKey }}'  
+            workingDirectory: '$(System.DefaultWorkingDirectory)/'           
         - task: TerraformTaskV1@0
           displayName: 'validate'
           inputs:
