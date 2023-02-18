@@ -12,7 +12,7 @@
           inputs:
             provider: 'azurerm'
             command: 'init'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/'
             backendServiceArm: '${{ parameters.backendServiceArm }}'
             backendAzureRmResourceGroupName: '${{ parameters.backendAzureRmResourceGroupName }}'
             backendAzureRmStorageAccountName: '${{ parameters.backendAzureRmStorageAccountName }}'
