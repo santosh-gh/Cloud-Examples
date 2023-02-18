@@ -22,6 +22,6 @@
           inputs:
             provider: 'azurerm'
             command: 'plan'
-            commandOptions: '-input=false -var-file="../${{ parameters.environment }}.tfvars"'
+            commandOptions: '-input=false -var-file="../templates/${{ parameters.environment }}.tfvars"'
             environmentServiceNameAzureRM: '${{ parameters.backendServiceArm }}'
             workingDirectory: '$(System.DefaultWorkingDirectory)/'
