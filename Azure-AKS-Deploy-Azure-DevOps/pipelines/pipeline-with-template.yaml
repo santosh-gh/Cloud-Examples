@@ -48,7 +48,7 @@ stages :
           backendAzureRmContainerName: ${{ variables.backendAzureRmContainerName }}
           backendAzureRmKey: ${{ variables.backendAzureRmKey }}
           environment: ${{ variables.environment }}
-          terraform_version: ${{ variables.terraform_version }}
+          # terraform_version: ${{ variables.terraform_version }}
 
   # - stage: terraform_plan
   #   dependsOn: [terraform_validate]
