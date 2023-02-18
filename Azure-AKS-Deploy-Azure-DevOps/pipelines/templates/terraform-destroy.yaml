@@ -15,7 +15,7 @@
             backendAzureRmStorageAccountName: '${{ parameters.backendAzureRmStorageAccountName }}'
             backendAzureRmContainerName: '${{ parameters.backendAzureRmContainerName }}'
             backendAzureRmKey: '${{ parameters.backendAzureRmKey }}' 
-            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/'
         - task: TerraformTaskV1@0
           displayName: 'destroy'
           condition: and(succeeded(), eq(variables['action'], 'Destroy'))
