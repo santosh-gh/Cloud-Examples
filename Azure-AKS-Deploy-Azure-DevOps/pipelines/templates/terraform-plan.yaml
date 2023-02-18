@@ -24,4 +24,4 @@
             command: 'plan'
             commandOptions: '-input=false -var-file="../${{ parameters.environment }}/${{ parameters.environment }}.tfvars"'
             environmentServiceNameAzureRM: '${{ parameters.backendServiceArm }}'
-            workingDirectory: '$(System.DefaultWorkingDirectory)/terraform/'
+            workingDirectory: '$(System.DefaultWorkingDirectory)/'
