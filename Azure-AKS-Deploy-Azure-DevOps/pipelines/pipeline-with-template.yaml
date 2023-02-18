@@ -32,7 +32,7 @@ variables:
   - name: environment
     value: 'production'
   - name: terraform_version
-    value: '1.3.8'
+    value: '1.3.9'
   - name: action
     value: ${{ parameters.Action }}
 
@@ -48,7 +48,7 @@ stages :
           backendAzureRmContainerName: ${{ variables.backendAzureRmContainerName }}
           backendAzureRmKey: ${{ variables.backendAzureRmKey }}
           environment: ${{ variables.environment }}
-          # terraform_version: ${{ variables.terraform_version }}
+          terraform_version: ${{ variables.terraform_version }}
 
   # - stage: terraform_plan
   #   dependsOn: [terraform_validate]
